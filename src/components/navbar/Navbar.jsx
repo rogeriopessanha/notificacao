@@ -1,10 +1,27 @@
 
 import "./navbar.css"
+import Notification from "../../img/sino1.svg"
+import Menssage from "../../img/mail1.svg"
+import Settings from "../../img/definicoes1.svg"
 
 const Navbar = () => {
     return(
         <div className="navbar">
-            navbar
+            <span className="logo">Notificação App</span>
+            <div className="icons">
+                <div className="icon">
+                    <img src={Notification} alt="" className="iconImg" />
+                    <div className="counter">3</div>
+                </div>
+                <div className="icon">
+                    <img src={Menssage} alt="" className="iconImg" />
+                    <div className="counter">3</div>
+                </div>
+                <div className="icon">
+                    <img src={Settings} alt="" className="iconImg" />
+                    <div className="counter">3</div>
+                </div>
+            </div>
         </div>
     )
 }
