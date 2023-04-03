@@ -42,8 +42,8 @@
 
 .infoIcon{
     position: absolute;
-    right: 0;
-    width: 23px;
-    height: 23px;
-    color: red;
+    right: 5px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
 }

@@ -14,22 +14,16 @@ const Card = ({post}) => {
     return (
         <div className="card">
             <div className="info">
-                <img src={post.userImg} alt="" />
-                <span>{post.fullname}</span>
+                <img src={post.userImg} alt="" className="userImg" />
+                <span>{post.name}</span>
             </div>
-            <img src={post.postImg} alt="" />
+            <img src={post.postImg} alt="" className="postImg" />
 
             <div className="interaction">
                 <img src={Heart} alt="" className="cardIcon" />
-            </div>
-            <div className="interaction">
                 <img src={Comment} alt="" className="cardIcon" />
-            </div>
-            <div className="interaction">
                 <img src={Share} alt="" className="cardIcon" />
-            </div>
-            <div className="interaction">
-                <img src={Info} alt="" className="cardIcon" />
+                <img src={Info} alt="" className="infoIcon" />
             </div>
         </div>
     )
