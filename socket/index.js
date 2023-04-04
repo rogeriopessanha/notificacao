@@ -7,11 +7,39 @@ const io = new Server({
     },
 });
 
+let onlineUsers = []
+
+const addNewUser = (username, socketId) =>{
+    !onlineUsers.some((user) => user.username === username) && onlineUsers.push({username, socketId})
+}
+
+const removeUser = (socketId) => {
+    onlineUsers = onlineUsers.filter(user => user.socketId !== socketId)
+}
+
+const getUser = (username) => {
+    return onlineUsers.find((user) => user.username === username)
+}
+
 io.on("connection", (socket) => {
-    console.log("ESTOU CONECTADO")
+
+    socket.on("newUser", (username) => {
+        addNewUser(username, socket.id)
+    })
+   
+    // [
+    //     {
+    //         username:"john",
+    //         socketId:"tyfytfyfuiyg"
+    //     },
+    //     {
+    //         username:"mari",
+    //         socketId:"çlkçlkçlk"
+    //     }
+    // ]
 
     socket.on("disconnect", () => {
-        console.log("SAINDO DO SERVIDOR...")
+        removeUser(socket.id)
     })
 });
 
