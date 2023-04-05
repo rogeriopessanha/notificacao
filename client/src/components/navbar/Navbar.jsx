@@ -5,7 +5,17 @@ import Menssage from "../../img/mail1.svg"
 import Settings from "../../img/definicoes1.svg"
 import { useEffect, useState } from "react"
 
-const Navbar = () => {
+const Navbar = ({socket}) => {
+    const [notifications, setNotifications] = useState([])
+
+    useEffect(() => {
+        socket.on("getNotification", (data) => {
+            setNotifications((prev) => [...prev, data])
+        })
+    },[socket])
+
+    console.log(notifications)
+
     return (
         <div className="navbar">
             <span className="logo">Notificação App</span>

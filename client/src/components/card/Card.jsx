@@ -1,12 +1,10 @@
-import { useState } from "react"
 import "./card.css"
 import Heart from "../../img/heart.svg"
 import HeartFilled from "../../img/heartFilled.svg"
 import Comment from "../../img/msg.svg"
 import Share from "../../img/share.svg"
 import Info from "../../img/info.svg"
-
-
+import { useState } from "react"
 
 
 const Card = ({ post, socket, user }) => {

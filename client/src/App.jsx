@@ -1,4 +1,3 @@
-
 import "./app.css"
 import { useEffect, useState } from "react";
 import Navbar from "./components/navbar/Navbar"
@@ -13,9 +12,9 @@ const App = () => {
   const [socket, setSocket] = useState(null)
 
   useEffect(() =>{
-    setSocket (io("http://localhost:5000"));
+    setSocket (io("http://localhost:80"));
     
-  },[])
+  },[]);
 
   useEffect(() =>{
     socket?.emit("newUser", user)

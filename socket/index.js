@@ -1,4 +1,3 @@
-
 import { Server } from "socket.io";
 
 const io = new Server({
@@ -14,11 +13,12 @@ const addNewUser = (username, socketId) =>{
 }
 
 const removeUser = (socketId) => {
-    onlineUsers = onlineUsers.filter(user => user.socketId !== socketId)
+    onlineUsers = onlineUsers.filter((user) => user.socketId !== socketId)
 }
 
 const getUser = (username) => {
     return onlineUsers.find((user) => user.username === username)
+    console.log(getUser)
 }
 
 io.on("connection", (socket) => {
@@ -26,21 +26,20 @@ io.on("connection", (socket) => {
     socket.on("newUser", (username) => {
         addNewUser(username, socket.id)
     })
-   
-    // [
-    //     {
-    //         username:"john",
-    //         socketId:"tyfytfyfuiyg"
-    //     },
-    //     {
-    //         username:"mari",
-    //         socketId:"çlkçlkçlk"
-    //     }
-    // ]
+
+    socket.on("sendNotification", ({senderName, receiverName, type}) => {
+        const receiver = getUser(receiverName)
+        io.to(receiver.socketId).emit("getNotification", {
+            senderName,
+            type,
+        })
+    })
+
+//    io.emit("first", "ola mundo")
 
     socket.on("disconnect", () => {
-        removeUser(socket.id)
+       removeUser(socket.id)
     })
 });
 
-io.listen(5000);
+io.listen(80);
