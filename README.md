@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Notificação App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicativo em tempo real, onde podemos vê quando recebemos uma notificação de um usuário, foi construída usando a biblioteca ReactJS e a tecnologia de comunicação em tempo real, Socket.IO.
 
-## Available Scripts
+## 🚀 Começando
 
-In the project directory, you can run:
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
 
-### `npm start`
+### 📋 Pré-requisitos
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Antes de começar, você precisa ter o Node.js instalado na sua máquina.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🔧 Instalação
 
-### `npm test`
+Para executar o projeto em sua máquina local, siga estas etapas:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone o repositório em sua máquina local usando o comando:
 
-### `npm run build`
+```
+git clone https://github.com/rogeriopessanha/notificacao.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Instale as dependências do projeto usando o comando npm install ou yarn install.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Inicie o servidor usando o comando npm start ou yarn start.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Abra o aplicativo em seu navegador acessando o endereço http://localhost:3000
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ⚙️ Funcionalidades:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Este projeto tem como objetivo demonstrar o uso do Socket.IO para criar uma aplicação em tempo real. Ele simula um post em uma rede social que permite a vizualização ao receber alguma notificação.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Ao abrir a aplicação, o usuário pode curtir, compartilhar e encaminhar o post do usuário e o mesmo vai receber uma notificação em tempo real.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🔎 Funcionamento do app
 
-## Learn More
+<h1 align="center">
+  <img width="850px" height="550px" src="" />
+</h1>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🛠️ Construído com
 
-### Code Splitting
+* [ReactJS](https://react.dev/) 
+* [Socket.IO](https://socket.io/) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📄 Licença 
 
-### Analyzing the Bundle Size
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais informações.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
+# Autor
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Rogerio Pessanha 
