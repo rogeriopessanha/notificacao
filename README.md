@@ -29,7 +29,7 @@ Abra o aplicativo em seu navegador acessando o endereço http://localhost:3000
 
 ## ⚙️ Funcionalidades:
 
-Este projeto tem como objetivo demonstrar o uso do Socket.IO para criar uma aplicação em tempo real. Ele simula um post em uma rede social que permite a vizualização ao receber alguma notificação.
+Este projeto tem como objetivo demonstrar o uso do Socket.IO para criar uma aplicação em tempo real. Ele simula um post em uma rede social que permite a visualização ao receber alguma notificação.
 
 Ao abrir a aplicação, o usuário pode curtir, compartilhar e encaminhar o post do usuário e o mesmo vai receber uma notificação em tempo real.
 
