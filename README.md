@@ -36,7 +36,7 @@ Ao abrir a aplicação, o usuário pode curtir, compartilhar e encaminhar o post
 ## 🔎 Funcionamento do app
 
 <h1 align="center">
-  <img width="850px" height="550px" src="" />
+  <img width="850px" height="550px" src="https://github.com/rogeriopessanha/notificacao/blob/main/client/src/readme/notificar.mp" />
 </h1>
 
 
